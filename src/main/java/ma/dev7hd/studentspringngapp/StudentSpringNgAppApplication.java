@@ -24,8 +24,8 @@ public class StudentSpringNgAppApplication {
     CommandLineRunner commandLineRunner(StudentRepository studentRepository, PaymentRepository paymentRepository) {
         return args -> {
             studentRepository.save(Student.builder()
-                            .firstName("Hamza")
-                            .lastName("Damiri")
+                            .firstName("Oussama")
+                            .lastName("Bissi")
                             .code("1210113571")
                             .email("hamza.damiri@edu.ma")
                             .programId("II-BDCC")
@@ -38,17 +38,17 @@ public class StudentSpringNgAppApplication {
                     .programId("II-GLCID")
                     .build());
             studentRepository.save(Student.builder()
-                    .firstName("Hind")
-                    .lastName("Bakhtari")
+                    .firstName("Ahmed")
+                    .lastName("Berrada")
                     .code("1210113534")
-                    .email("hind.bakhtari@edu.ma")
+                    .email("ahmed.berrada@edu.ma")
                     .programId("SMC")
                     .build());
             studentRepository.save(Student.builder()
-                    .firstName("Widad")
-                    .lastName("Damiri")
+                    .firstName("Asmae")
+                    .lastName("Omari")
                     .code("1627365487")
-                    .email("widad.damiri@edu.ma")
+                    .email("asmae.omari@edu.ma")
                     .programId("SMAI")
                     .build());
             studentRepository.findAll().forEach(student -> {
